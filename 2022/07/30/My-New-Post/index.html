@@ -584,7 +584,7 @@
 <p>以下是您将要使用的初始实例模型：</p>
 <p><img src="https://graphacademy.neo4j.com/courses/modeling-fundamentals/2-defining-nodes/2-c-creating-initial-nodes/images/before-challenge1-instance-model.png"></p>
 <p>运行下面的 Cypher 代码，将“人物”和“电影”节点添加到图形中，这将用作我们的初始实例模型：</p>
-<p>单击代码示例右上角的“<strong>在沙盒中运行</strong>”按钮，打开右侧的“沙盒”并运行查询。</p>
+<p>运行查询。</p>
 <pre class=" language-cypher"><code class="language-cypher">MATCH (n) DETACH DELETE n;
 
 MERGE (:Movie {title: 'Apollo 13', tmdbId: 568, released: '1995-06-30', imdbRating: 7.6, genres: ['Drama', 'Adventure', 'IMAX']})
@@ -599,8 +599,7 @@ MERGE (:Movie {title: 'Hoffa', tmdbId: 10410, released: '1992-12-25', imdbRating
 <p>您可以通过运行以下代码来验证是否已创建节点：</p>
 <pre class=" language-cypher"><code class="language-cypher">MATCH (n) RETURN n
 </code></pre>
-<p>图中有 7 个节点：</p>
-<p><img src="https://raw.githubusercontent.com/RiYuezhaozhao/image-PicGo/202207310004922.png"></p>
+<p>共有 7 个节点。</p>
 <h2 id="2-4-标识新标签"><a href="#2-4-标识新标签" class="headerlink" title="2.4 标识新标签"></a>2.4 标识新标签</h2><p>我们需要为一个新的用例重构模型：</p>
 <p><strong>用例#4：有多少用户对一部电影进行了评分？</strong></p>
 <p>我们已经为我们的用例确定了 _“人物”<em>和</em>“电影”_节点：</p>
@@ -638,7 +637,7 @@ MERGE (:Movie {title: 'Hoffa', tmdbId: 10410, released: '1992-12-25', imdbRating
 <li><p>name - a string (eg. <code>User’s Name</code>)</p>
 </li>
 </ul>
-<p>使用右侧的沙箱窗口创建两个用户节点：</p>
+<p>创建两个用户节点：</p>
 <ol>
 <li><p>‘Sandy Jones’ with the userId of 534</p>
 </li>
